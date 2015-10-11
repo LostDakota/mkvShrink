@@ -1,11 +1,11 @@
-#INTRODUCTION
+<h1>INTRODUCTION</h1>
 -------------------------------------------------------
 This bash script will run a two pass re-encode on a video 
 file with the intent to change the file size to something 
 more storage friendly. 
 Supported files include, but are not limited to .mkv, .avi, and .mp4.
 
-#SUPPORT
+<h1>SUPPORT</h1>
 -------------------------------------------------------
 This script will run on a Debian/Ubuntu system. A temp 
 directory will be utilized to store the output files. 
@@ -16,12 +16,12 @@ You should use absolute path values, as an option is to
 replace the original file, however you do not have to overwrite it.
 The linux utility 'screen' is also helpful, due to the 
 long duration of encoding video.
-`screen -dmS SOME_TITLE`
+<code>screen -dmS SOME_TITLE</code>
 
 
-#DEPENDENCIES
+<h1>DEPENDENCIES</h1>
 -------------------------------------------------------
 You will need avconv and mediainfo, both available to you in the Ubuntu repositories.
-`sudo apt-get install avconv mediainfo`
+<code>sudo apt-get install avconv mediainfo</code>
 Optional dependencies are twidge and screen.
 
