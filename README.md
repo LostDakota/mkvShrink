@@ -22,7 +22,7 @@ screen -dmS SOME_TITLE
 And then run:
 ```sh
 screen -r SOME_TITLE
-.mkvShrink ~/Movies/Title\ of\ the\ Movie.mkv
+./mkvShrink.sh ~/Movies/Title\ of\ the\ Movie.mkv
 ```
 
 
