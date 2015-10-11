@@ -68,7 +68,8 @@ if [ $CONTINUE == Y ] ; then
 	echo -e "\e[94mPass 2 completed in $(($PASS2 / 60)) minutes."
 	echo -e "\e[32mThe resulting file is $GSIZE G.\e[0m"
 	echo -e "\e[31mDo you want to replace the old with the new? Y or N\e[0m"
-	/var/www/markVI/scripts/parse.sh "$BASENAME is ready to be processed. `date +%l:%M%P`"
+#Here you can use twidge to be notified when your file is done.
+#	twidge update "$BASENAME is ready to be processed. `date +%l:%M%P`"
 
 	read REPLACE
 	if [ $REPLACE == Y ] ; then
