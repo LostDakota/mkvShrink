@@ -17,13 +17,15 @@ replace the original file, however you do not have to overwrite it.
 The linux utility 'screen' is also helpful, due to the 
 long duration of encoding video.
 ```sh
-`screen -dmS SOME_TITLE
+screen -dmS SOME_TITLE
+```
 
 
-<h1>DEPENDENCIES</h1>
+##DEPENDENCIES
 -------------------------------------------------------
 You will need avconv and mediainfo, both available to you in the Ubuntu repositories.
 ```sh
-`sudo apt-get install avconv mediainfo
+sudo apt-get install avconv mediainfo
+```
 Optional dependencies are twidge and screen.
 
