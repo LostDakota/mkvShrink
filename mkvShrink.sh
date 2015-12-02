@@ -36,9 +36,9 @@ else
 
 	START=`date +%s`
 
-	avconv -y -i "$1" -pass 1 -c:v libx264 -b:v $BITRATE\k -preset veryslow -threads auto -an -f null -
+	avconv -y -i "$1" -pass 1 -c:v libx264 -b:v $BITRATE\k -preset $PRESET -threads auto -an -f null -
 
-	avconv -i "$1" -pass 2 -c:v libx264 -b:v $BITRATE\k -c:a libmp3lame -b:a 128k -preset veryslow -threads auto -sn "$BASENAME"
+	avconv -i "$1" -pass 2 -c:v libx264 -b:v $BITRATE\k -c:a libmp3lame -b:a 128k -preset $PRESET -threads auto -sn "$BASENAME"
 
 	END=`date +%s`
 
