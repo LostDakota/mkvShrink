@@ -17,7 +17,7 @@ PRESET="veryslow" #Your options are ultrafast, superfast, veryfast, faster, fast
 
 if [ $OSIZE -lt $ACCEPTABLE ] ;then
 	echo "Original size of $1 is sufficient at $OSIZE"
-	echo "Original size of $1 is sufficient at $OSIZE" >> ~/transcode/mkvShrink.log
+	echo "Original size of $1 is sufficient at $OSIZE" >> $THEDIR
 else
 
 	echo "Checking for working directory..."
